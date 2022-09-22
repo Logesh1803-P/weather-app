@@ -16,7 +16,7 @@ res.sendFile(__dirname+"/index.html")
 app.post("/",function(req,res){
 
     const query=req.body.place;
-    const appkey= "62e1c2f49402d420c6cb02e19470bb9d";
+    const appkey= your app key;
     const url="https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid="+appkey+"";
   https.get(url,function(response){
       console.log(response.statusCode);
